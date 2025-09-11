@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FastAPI Blog</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🚀 FastAPI Blog</h1>
+
+  <!-- Authentication -->
+  <div id="auth-section">
+    <h2>Login</h2>
+    <form id="login-form">
+      <input type="email" id="login-email" placeholder="Email" required>
+      <input type="password" id="login-password" placeholder="Password" required>
+      <button type="submit">Login</button>
+    </form>
+
+    <h2>Register</h2>
+    <form id="register-form">
+      <input type="email" id="register-email" placeholder="Email" required>
+      <input type="password" id="register-password" placeholder="Password" required>
+      <button type="submit">Register</button>
+    </form>
+  </div>
+
+  <!-- Main app -->
+  <div id="app-section" style="display:none;">
+    <button id="logout">Logout</button>
+
+    <h2>Create Post</h2>
+    <form id="post-form">
+      <input type="text" id="post-title" placeholder="Title" required>
+      <textarea id="post-content" placeholder="Content" required></textarea>
+      <button type="submit">Create</button>
+    </form>
+
+    <h2>All Posts</h2>
+    <div id="posts"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
